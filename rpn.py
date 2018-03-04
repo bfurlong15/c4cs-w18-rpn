@@ -61,9 +61,12 @@ def calculate(myarg):
             	stack.append(arg)
             	stack.append(arg)
             	print(stack)
-            	size = len(stack)
-            	
+            	size = len(stack)            	
             	return size
+            if token == "^":
+            	arg1 = stack.pop()
+            	arg2 = stack.pop()
+            	return arg2**arg1
             	
             
         print(stack)
