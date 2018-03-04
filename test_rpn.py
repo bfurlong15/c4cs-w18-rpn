@@ -19,3 +19,6 @@ class TestBasics(unittest.TestCase):
     def test_copy(self):
     	result = rpn.calculate("5 6 3 copy")
     	self.assertEqual(4, result)
+    def test_carat(self):
+    	result = rpn.calculate("4 2 ^")
+    	self.assertEqual(16, result)
